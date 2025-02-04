@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Información Legal de PetsHome</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .title {
+      text-align: center;
+      color: #ff9d59;
+      font-size: 35px;
+      margin-bottom: 20px;
+    }
+    .box {
+      width: 80%;
+    }
+    .section-header {
+      font-size: 20.5px;
+      font-weight: bold;
+      color: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+    .icon {
+      margin-left: 10px;
+      font-size: 22px;
+      margin-top: 2px;
+    }
+    .text {
+      font-size: 14.5px;
+      color: #636363;
+      margin-top: -0.5%;
+      transition: all 0.3s ease;
+    }
+    .open-text {
+      font-size: 16px;
+      color: black;
+      margin-top: -0.5%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="title">
+      <h1 style="font-size: 33px;">Información Legal de PetsHome</h1>
+    </div>
+    <div class="box">
+      <!-- Section 1: Términos y condiciones -->
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(1)">
+          <p style="text-decoration: underline;">1. Términos y condiciones</p>
+          <span id="icon1" class="icon">+</span>
+        </div>
+        <p id="text1" class="text">Bienvenido/a a PetsHome. Los siguientes términos y condiciones (en adelante, "Términos") regulan el acceso y uso de esta aplicación (en adelante, "la Aplicación")...</p>
+        <p id="openText1" class="open-text" style="display: none;">Bienvenido/a a PetsHome. Los siguientes términos y condiciones (en adelante, "Términos") regulan el acceso y uso de esta aplicación (en adelante, "la Aplicación"), así como de todos los contenidos y servicios puestos a disposición a través de ella. Al acceder o utilizar la Aplicación, usted (en adelante, "el Usuario") acepta estar sujeto a estos Términos, así como a nuestra política de privacidad. Si no está de acuerdo con estos Términos o con nuestra política de privacidad, por favor, no utilice la Aplicación.</p>
+      </div>
+
+      <!-- Section 2: Propiedad intelectual -->
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(2)">
+          <p style="text-decoration: underline;">2. Propiedad intelectual</p>
+          <span id="icon2" class="icon">+</span>
+        </div>
+        <p id="text2" class="text">La Aplicación y todos los contenidos y servicios asociados a ella son propiedad de sus titulares. Queda expresamente prohibida cualquier reproducción...</p>
+        <p id="openText2" class="open-text" style="display: none;">La Aplicación y todos los contenidos y servicios asociados a ella son propiedad de sus titulares. Queda expresamente prohibida cualquier reproducción, distribución, modificación, transformación, cesión, puesta a disposición, comunicación pública y cualquier otro acto de explotación total o parcial de los contenidos y servicios sin la autorización previa y por escrito de los titulares correspondientes.</p>
+      </div>
+
+      <!-- Section 3: Responsabilidad del Usuario -->
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(3)">
+          <p style="text-decoration: underline;">3. Responsabilidad del Usuario</p>
+          <span id="icon3" class="icon">+</span>
+        </div>
+        <p id="text3" class="text">El Usuario se compromete a utilizar la Aplicación de conformidad con la ley, la moral, el orden público y los presentes Términos. El Usuario será responsable de cualquier...</p>
+        <p id="openText3" class="open-text" style="display: none;">El Usuario se compromete a utilizar la Aplicación de conformidad con la ley, la moral, el orden público y los presentes Términos. El Usuario será responsable de cualquier daño o perjuicio que pudiera causar a terceros o a la propia Aplicación como consecuencia de la infracción de estos Términos o de la normativa aplicable.</p>
+      </div>
+
+      <!-- Section 4: Responsabilidad de la empresa -->
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(4)">
+          <p style="text-decoration: underline;">4. Responsabilidad de la empresa</p>
+          <span id="icon4" class="icon">+</span>
+        </div>
+        <p id="text4" class="text">La empresa no se responsabiliza de los daños o perjuicios que pudieran derivarse del acceso, uso o mal uso de la Aplicación...</p>
+        <p id="openText4" class="open-text" style="display: none;">La empresa no se responsabiliza de los daños o perjuicios que pudieran derivarse del acceso, uso o mal uso de la Aplicación, así como de los contenidos y servicios asociados a ella, salvo que dichos daños o perjuicios sean imputables a una actuación dolosa o negligente por parte de la empresa.</p>
+      </div>
+
+      <!-- Section 5: Modificaciones y actualizaciones -->
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(5)">
+          <p style="text-decoration: underline;">5. Modificaciones y actualizaciones</p>
+          <span id="icon5" class="icon">+</span>
+        </div>
+        <p id="text5" class="text">La empresa se reserva el derecho a modificar en cualquier momento y sin necesidad de previo aviso los contenidos y servicios ofrecidos...</p>
+        <p id="openText5" class="open-text" style="display: none;">La empresa se reserva el derecho a modificar en cualquier momento y sin necesidad de previo aviso los contenidos y servicios ofrecidos a través de la Aplicación, así como a cambiar, suprimir o añadir nuevos Términos. El Usuario estará sujeto a los Términos vigentes en el momento de su acceso o uso de la Aplicación.</p>
+      </div>
+
+      <!-- Section 6: Política de privacidad -->
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(6)">
+          <p style="text-decoration: underline;">6. Política de privacidad</p>
+          <span id="icon6" class="icon">+</span>
+        </div>
+        <p id="text6" class="text">La empresa garantiza la protección de los datos personales proporcionados por el Usuario en el marco del acceso y uso...</p>
+        <p id="openText6" class="open-text" style="display: none;">La empresa garantiza la protección de los datos personales proporcionados por el Usuario en el marco del acceso y uso de la Aplicación, de conformidad con lo establecido en nuestra política de privacidad.</p>
+      </div>
+
+      <!-- Section 7: Legislación y jurisdicción -->
+      <div class="section">
+        <div class="section-header" onclick="toggleSection(7)">
+          <p style="text-decoration: underline;">7. Legislación y jurisdicción</p>
+          <span id="icon7" class="icon">+</span>
+        </div>
+        <p id="text7" class="text">Los presentes Términos se regirán e interpretarán de acuerdo con la legislación española. Para cualquier controversia...</p>
+        <p id="openText7" class="open-text" style="display: none;">Los presentes Términos se regirán e interpretarán de acuerdo con la legislación española. Para cualquier controversia que pudiera derivarse del acceso o uso de la Aplicación, las partes se someten a los juzgados y tribunales de la ciudad de Murcia.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleSection(section) {
+      const icon = document.getElementById(`icon${section}`);
+      const text = document.getElementById(`text${section}`);
+      const openText = document.getElementById(`openText${section}`);
+      
+      if (openText.style.display === "none") {
+        icon.textContent = "-";
+        openText.style.display = "block";
+        text.style.display = "none";
+      } else {
+        icon.textContent = "+";
+        openText.style.display = "none";
+        text.style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
